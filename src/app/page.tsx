@@ -5,7 +5,7 @@ import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Sparkles, Shield, Users } from "lucide-react";
 
-export default function Home() {
+const SignInPage = () => {
   const router = useRouter();
   function handleSignup() {
     router.push('/signup')
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="relative z-[2] flex flex-col items-center justify-center text-center px-4">
           <AuroraText className="text-8xl font-bold text-white z-[10] mb-6">WEBSITE A</AuroraText>
           <h2 className="text-xl text-gray-300 max-w-2xl mb-8">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&quot;
           </h2>
           <div className="flex gap-4">
             <ShimmerButton onClick={handleSignup} className="group">
@@ -79,5 +79,7 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+};
+
+export default SignInPage;
 
